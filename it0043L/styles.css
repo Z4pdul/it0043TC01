@@ -49,15 +49,20 @@ p {
   line-height: 1.5;
 }
 
-.highlight {
+.highlight1 {
   color: #008000; 
+  font-weight: bold;
+}
+
+.highlight2 {
+  color: black; 
   font-weight: bold;
 }
 
 .conclusion {
   font-size: 1.3em;
   font-weight: bold;
-  color: #006400; 
+  color: red; 
   margin-top: 20px;
 }
 
