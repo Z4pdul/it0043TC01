@@ -11,10 +11,9 @@ body {
 }
 
 .card {
-    border-radius: 10px;
-    margin: 20px;
-    width: calc(33% - 40px);
-    overflow: hidden;
+    border-radius: 20px;
+    margin: 30px;
+    width: calc(30% - 40px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,14 +24,14 @@ body {
     background-image: url('https://i.pinimg.com/736x/d6/9e/f6/d69ef6bd0de80cb5f7ee0ff2c0c372e1.jpg');
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     flex-grow: 1;
 }
 
 .image {
     width: 160px;
-    height: 160px;
+    height: 170px;
     margin: 0 auto;
     display: block;
 }
@@ -68,17 +67,32 @@ h2 {
 .psychicType {
     background-color: #E5709B;
 }
+.Psychic{
+    background-color: #E397D1;
+}
 
 .dragonType {
     background-color: #6A7BAF;
+}
+
+.dragon {
+    background-color: rgb(77, 77, 176);
 }
 
 .darkType {
     background-color: #736C75;
 }
 
+.dark {
+    background-color: rgb(70, 70, 70);
+}
+
 .normalType {
     background-color:#AAB09F;
+}
+
+.normal {
+    background-color: gray;
 }
 
 .flyingType {
@@ -89,12 +103,16 @@ h2 {
     background-color: #89A1B0;
 }
 
+.steel {
+    background-color: rgb(28, 28, 61);
+}
+
 .waterType {
     background-color: #539AE2;
 }
 
 .water{
-    background-color: #539AE2;
+    background-color: blue;
     
 }
 
