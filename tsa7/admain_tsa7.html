@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Control Panel</title>
+    <link rel="stylesheet" href="admain_tsa7.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="reset-flexbox">Reset Flexbox</button>
+        <input type="number" id="gap-size" placeholder="0" />
+        <button id="set-gap">Gap</button>
+
+        <div class="control-group">
+            <h2>Flex Direction</h2>
+            <button data-direction="row">Row</button>
+            <button data-direction="column">Column</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Justify Content</h2>
+            <button data-justify="flex-start">Start</button>
+            <button data-justify="center">Center</button>
+            <button data-justify="flex-end">End</button>
+            <button data-justify="space-between">Space Between</button>
+            <button data-justify="space-around">Space Around</button>
+            <button data-justify="space-evenly">Space Evenly</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Align Items</h2>
+            <button data-align="flex-start">Start</button>
+            <button data-align="center">Center</button>
+            <button data-align="flex-end">End</button>
+        </div>
+
+        <div class="control-group">
+            <h2>Flex Grow</h2>
+            <button id="reset-grow">Reset</button>
+            <button id="grow-all">Grow All</button>
+            <input type="number" id="grow-b1" placeholder="0" />
+            <button data-grow="1">Grow B-1</button>
+            <input type="number" id="grow-b2" placeholder="0" />
+            <button data-grow="2">Grow B-2</button>
+            <input type="number" id="grow-b3" placeholder="0" />
+            <button data-grow="3">Grow B-3</button>
+        </div>
+    </div>
+    <div class="flex-container" id="flex-container">
+        <div class="box box-1"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56e6e56d-738a-41a9-961f-73029fcb5c83/dbyod5z-79544eca-bb4d-4603-8117-223ba49433e5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU2ZTZlNTZkLTczOGEtNDFhOS05NjFmLTczMDI5ZmNiNWM4M1wvZGJ5b2Q1ei03OTU0NGVjYS1iYjRkLTQ2MDMtODExNy0yMjNiYTQ5NDMzZTUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X0Ul2LFyC0Dp3GqmUreJscsobroioAzeZ4YIzWTVB9s" alt=""></div>
+        <div class="box box-2"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc0aa838-3887-4a61-8dad-623362024b3e/d5y465y-bedebb57-0616-41e6-ace4-2c26b720ffce.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjMGFhODM4LTM4ODctNGE2MS04ZGFkLTYyMzM2MjAyNGIzZVwvZDV5NDY1eS1iZWRlYmI1Ny0wNjE2LTQxZTYtYWNlNC0yYzI2YjcyMGZmY2UuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lTxqJd_0ItrebrTBmBEmLiAHmsnRNU5znQmqSApIwG0" alt=""></div>
+        <div class="box box-3"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc0aa838-3887-4a61-8dad-623362024b3e/d5rwsx9-d39625fd-9e91-4057-97bb-0593d197b8e7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjMGFhODM4LTM4ODctNGE2MS04ZGFkLTYyMzM2MjAyNGIzZVwvZDVyd3N4OS1kMzk2MjVmZC05ZTkxLTQwNTctOTdiYi0wNTkzZDE5N2I4ZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qu_E7YVcN9h07qn3Xu31PS_wrF01OyzaaqOQbkA9tB0" alt=""></div>
+    </div>
+
+    <script src="tsa7.js"></script>
+</body>
+</html>
